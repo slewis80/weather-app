@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="searchBar">
+        <h1 class="title">Weather App</h1>
+        <form id="searchInputForm" name="searchInputForm">
+            <input name="searchParams" id="searchParams" type="text" placeholder="Search City, State, Zip"/>
+            <button name="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <section id="weatherDisplay">
+
+        <div id="currentOutputArea">
+            <h1 class="weatherData">Please select a city...</h1>
+        </div>
+
+        <div id="forecastOutputArea">
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="http://www.sabrinalewis.me" class="copyright"><h1>&copy 2020  Sabrina Lewis</h1></a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
