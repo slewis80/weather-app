@@ -16,7 +16,7 @@ function getWeatherData(e) {
     let city = searchParams.value
 
     // forecast URL
-    const forecastURL = `http://api.weatherapi.com/v1/forecast.json?key=a426f15efdaa4205864210403201711&q=${city}&days=3`
+    const forecastURL = `http://api.weatherapi.com/v1/forecast.json?key=83d976727511405bad3224359211002&q=${city}&days=3`
 
 
     axios.get(forecastURL)
