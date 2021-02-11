@@ -116,6 +116,17 @@
     color: firebrick;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* #weatherAPIlogo {
+    float: left;
+} */
+
 .copyright {
     text-decoration: none;
     text-align: center;
@@ -128,7 +139,7 @@ span {
     display: inline-block;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
     .title {
         display: block;
         text-align: center;
