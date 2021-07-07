@@ -30,40 +30,40 @@
     float: right;
 }
 
-#searchInputForm > input {
-    width: 300px;
+/* #searchInputForm > input { */
+    /* width: 300px;
     font-size: 16px;
-    padding: 7px;
-    border: none;
-    border-bottom: 1px solid rgb(56, 89, 199);
-    background: none;
-    margin-right: 0;
-}
+    padding: 7px; */
+    /* border: none;
+    border-bottom: 1px solid rgb(56, 89, 199); */
+    /* background: none; */
+    /* margin-right: 0; */
+/* } */
 
 #searchInputForm > input:focus {
     outline: none;
 }
 
-#searchInputForm > button {
-    width: 100px;
+/* #searchInputForm > button { */
+    /* width: 100px;
     font-size: 16px;
-    cursor: pointer;
-    background-color: rgb(56, 89, 199);
-    color: white;
-    padding: 7px;
+    cursor: pointer; */
+    /* background-color: rgb(56, 89, 199); */
+    /* color: white; */
+    /* padding: 7px;
     border: none;
     border-radius: 5px;
     margin-left: 0;
-    margin-right: 20px;
-}
+    margin-right: 20px; */
+/* } */
 
 #searchInputForm > button:focus {
     outline: none;
 }
 
-#searchInputForm > input::placeholder {
+/* #searchInputForm > input::placeholder {
     background-color: rgb(134, 183, 247);
-}
+} */
 
 #weatherDisplay {
     display: flex;
@@ -72,17 +72,11 @@
     align-items: center;
 }
 
-#currentOutputArea {
-    max-width: 400px;
-    max-height: 300px;
+/* #currentOutputArea {
     text-align: center;
-    background-color: whitesmoke;
     padding: 10px;
-    border: 1px solid rgb(2, 2, 104);
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px black;
     margin: 15px auto;
-}
+} */
 
 #threeDayForecast {
     display: flex;
@@ -97,13 +91,13 @@
 }
 
 .forecastOutputData {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 350px;
+    max-height: 350px;
     background-color: whitesmoke;
     padding: 10px;
-    border: 1px solid rgb(2, 2, 104);
+    /* border: 1px solid rgb(2, 2, 104); */
     border-radius: 15px;
-    box-shadow: 5px 5px 15px black;
+    /* box-shadow: 5px 5px 15px black; */
     margin: 10px;
 }
 

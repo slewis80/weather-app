@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <title>Weather-App</title>
 </head>
 
 <body>
-    <div class="searchBar">
-        <h1 class="title">Weather App</h1>
-        <form id="searchInputForm" name="searchInputForm">
-            <input name="searchParams" id="searchParams" type="text" placeholder="Search City, State, Zip"/>
-            <button name="submit" id="submitBtn">Submit</button>
+    <div class="navbar fixed-md-top shadow searchBar">
+        <h1 class="navbar-brand">Weather App</h1>
+        <form id="searchInputForm" class="form-group d-flex col-md-5" name="searchInputForm">
+            <input name="searchParams" class="form-control" id="searchParams" type="text" placeholder="Search City, State, Zip"/>
+            <button name="submit" type="submit" class="btn btn-primary mx-2" id="submitBtn">Submit</button>
         </form>
     </div>
 
-    <section id="weatherDisplay">
+    <section class="pt-5 pb-3" id="weatherDisplay">
 
-        <div id="currentOutputArea">
-            <h1 class="weatherData">Please select a city...</h1>
+        <div class="mt-5" id="currentOutputArea">
+            <!-- <h1 class="weatherData">Please select a city...</h1> -->
         </div>
 
         <div id="forecastOutputArea">
@@ -29,16 +32,30 @@
 
     </section>
 
-    <footer>
-        <div id="weatherAPIlogo">
-            <p>Powered By:</p>
-            <a href="https://www.weatherapi.com/" title="Free Weather API"><img src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png" alt="Weather data by WeatherAPI.com" border="0"></a>
-        </div>
-        <a href="http://slewis80.github.io" class="copyright"><h1>&copy 2020  Sabrina Lewis</h1></a>
+    <footer class="navbar navbar-light navbar-expand-lg p-4">
+        <ul class="navbar-nav ml-auto mr-auto align-items-center">
+            <li class="navbar-item m-auto" id="weatherAPIlogo">
+                <p class="navbar-item my-0">Powered By:</p>
+                <a class="nav-link m-0 py-0" href="https://www.weatherapi.com/" title="Free Weather API"><img src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png" alt="Weather data by WeatherAPI.com" border="0"></a>
+            </li>
+            <li class="navbar-item m-auto">
+                <a class="nav-link" href="http://slewis80.github.io">
+                    <h3 id="copyright">&copy 2020 Sabrina Lewis</h3>
+                </a>
+            </li>
+        </ul>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <!-- css file -->
     <script src="index.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
 </body>
 
 </html>

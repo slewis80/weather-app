@@ -38,44 +38,48 @@ function getWeatherData(e) {
 
             // current data output
             currentWeatherData.innerHTML = `
-                <h1 class="weatherData forecastDate">Current Conditions</h1>
-                <h1 class="weatherData">${city}, ${state}, ${country}</h1>
-                <h2 class="weatherData">${temp}&#8457</h2>
-                <span class="weatherData">${condition}</span>
-                <span class="weatherData">${humidity} % humidity</span>
-                <img class="weatherData currentImg" src="${conditionImg}">`
+                <div class="forecastOutputData text-center shadow border border-primary pb-3">
+                    <h3 class="weatherData forecastDate">Current Conditions</h3>
+                    <h5 class="weatherData">${city}, ${state}, ${country}</h5>
+                    <h4 class="weatherData">${temp}&#8457</h4>
+                    <span class="weatherData text-muted">${condition}</span>
+                    <span class="weatherData text-muted">${humidity} % humidity</span>
+                    <img class="weatherData currentImg" src="${conditionImg}">
+                </div>`
 
             // 3 day forecast output
             forecastData.innerHTML = `
-                <h1 id="threeDayForecastTitle">3 Day Forecast</h1>
-
+                <h2 class="py-3" id="threeDayForecastTitle">3 Day Forecast</h2>
+                
                 <div id="threeDayForecast">
-                <div class="forecastOutputData">
-                    <h1 class="weatherData forecastDate">${day1.date}</h1>
-                    <h3 class="weatherData">Hi: ${day1.day.maxtemp_f}&#8457</h3>
-                    <h3 class="weatherData">Lo: ${day1.day.mintemp_f}&#8457</h3>
-                    <span class="weatherData">${day1.day.condition.text}</span>
-                    <span class="weatherData">${day1.day.avghumidity} % humidity</span>
+
+                <div class="forecastOutputData shadow border border-primary">
+                    <h3 class="weatherData forecastDate text-center">${day1.date}</h3>
+                    <h4 class="weatherData">Hi: ${day1.day.maxtemp_f}&#8457</h4>
+                    <h4 class="weatherData">Lo: ${day1.day.mintemp_f}&#8457</h4>
+                    <span class="weatherData text-muted">${day1.day.condition.text}</span>
+                    <span class="weatherData text-muted">${day1.day.avghumidity} % humidity</span>
                     <img class="weatherData forecastImg" src="${day1.day.condition.icon}">
                 </div>
 
-                <div class="forecastOutputData">
-                    <h1 class="weatherData forecastDate">${day2.date}</h1>
-                    <h3 class="weatherData">Hi: ${day2.day.maxtemp_f}&#8457</h3>
-                    <h3 class="weatherData">Lo: ${day2.day.mintemp_f}&#8457</h3>
-                    <span class="weatherData">${day2.day.condition.text}</span>
-                    <span class="weatherData">${day2.day.avghumidity} % humidity</span>
+                <div class="forecastOutputData shadow border border-primary">
+                    <h3 class="weatherData forecastDate text-center">${day2.date}</h3>
+                    <h4 class="weatherData">Hi: ${day2.day.maxtemp_f}&#8457</h4>
+                    <h4 class="weatherData">Lo: ${day2.day.mintemp_f}&#8457</h4>
+                    <span class="weatherData text-muted">${day2.day.condition.text}</span>
+                    <span class="weatherData text-muted">${day2.day.avghumidity} % humidity</span>
                     <img class="weatherData forecastImg" src="${day2.day.condition.icon}">
                 </div>
 
-                <div class="forecastOutputData">
-                    <h1 class="weatherData forecastDate">${day3.date}</h1>
-                    <h3 class="weatherData">Hi: ${day3.day.maxtemp_f}&#8457</h3>
-                    <h3 class="weatherData">Lo: ${day3.day.mintemp_f}&#8457</h3>
-                    <span class="weatherData">${day3.day.condition.text}</span>
-                    <span class="weatherData">${day3.day.avghumidity}% humidity</span>
+                <div class="forecastOutputData shadow border border-primary">
+                    <h3 class="weatherData forecastDate text-center">${day3.date}</h3>
+                    <h4 class="weatherData">Hi: ${day3.day.maxtemp_f}&#8457</h4>
+                    <h4 class="weatherData">Lo: ${day3.day.mintemp_f}&#8457</h4>
+                    <span class="weatherData text-muted">${day3.day.condition.text}</span>
+                    <span class="weatherData text-muted">${day3.day.avghumidity}% humidity</span>
                     <img class="weatherData forecastImg" src="${day3.day.condition.icon}">
                 </div>
+
                 </div>`
 
             searchParams.value = ""
